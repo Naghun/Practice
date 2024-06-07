@@ -24,7 +24,7 @@ async function fetchData(url:string):Promise<Tour[]>{
     }
 }
 
-const tours = await fetchData(url)
-tours.map((tour:any) => {
-    console.log(tour.name);
-})
+// const tours = await fetchData(url)
+// tours.map((tour:any) => {
+//     console.log(tour.name);
+// })
