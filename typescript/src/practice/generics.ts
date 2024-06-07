@@ -50,6 +50,20 @@ let arrayNumbers = createArray<number>(10, 100)
 console.log(arrayStrings);
 console.log(arrayNumbers);
 
+function pair<T, U>(param1: T, param2: U): [T, U] {
+    return [param1, param2]
+}
+
+let resultPair = pair<number, string>(123, 'hello')
+
+function processValue<T extends string>(value: T): T {
+    console.log(value);
+    return value
+}
+
+processValue('hello')
+
+
 
 
 
